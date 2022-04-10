@@ -15,12 +15,8 @@ public class Solution {
     private int result=0;
     private int adds=0;
     public int sum(TreeNode root){
-        if(root==null){
-            return 0;
-        }
-        else{
-           return root.val+sum(root.left)+sum(root.right);
-        }
+        
+        return root==null?0:root.val+sum(root.left)+sum(root.right);
         
     }
     public int FindTilt(TreeNode root) {
