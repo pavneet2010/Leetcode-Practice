@@ -26,8 +26,8 @@ public class Solution {
     public int FindTilt(TreeNode root) {
      if(root==null) return 0;
         
-       int ltsum= FindTilt(root.left);        
-       int rtsum= FindTilt(root.right);
+       FindTilt(root.left);        
+       FindTilt(root.right);
         if(root.left==null&& root.right==null){            
             return 0;
         }
@@ -35,6 +35,6 @@ public class Solution {
           result+= Math.Abs(sum(root.left)-sum(root.right));            
         }
         
-        return Math.Abs(result);
+        return result;
     }
 }
