@@ -7,9 +7,8 @@ public class Solution {
             return true;
         }
         int temp=0;
-        while(x>0){
-            temp=temp*10;
-            temp+=x%10;
+        while(x>0){            
+            temp= temp*10+x%10;
             x=x/10;            
         }
         Console.Write(temp);
