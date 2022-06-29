@@ -1,18 +1,25 @@
 public class Solution {
     public int SearchInsert(int[] nums, int target) {
-        int i=0;
-        while(i<nums.Length){
-            if(target==nums[i]){
-                return i;
-            }else if(target>nums[i]){
-                i++;
-            }else if(target<nums[i]){
-                return i;
-            }
-            
-        }
-        return i;
         
+            int first=0;
+            int last= nums.Length-1;
+            int mid;
+
+            while(first<=last){
+                 mid= first + ((last - first) / 2);
+
+            if(nums[mid]==target){
+                return mid;
+            }
+            if(target>nums[mid]){
+                first=mid+1;
+                
+            }else{
+                last=mid-1;
+            }
+
+            }
+            return first;
         
     }
 }
