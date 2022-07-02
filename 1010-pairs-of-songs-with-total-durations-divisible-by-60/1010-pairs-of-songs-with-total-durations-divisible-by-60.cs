@@ -4,7 +4,7 @@ public class Solution {
         Dictionary<int,int> dict=new Dictionary<int,int>();
         int res=0;
         foreach(int i in time){
-           var mod = i % 60;
+        int mod = i % 60;
         int complement = mod != 0 ? 60 - mod : 0;
 
         if (dict.ContainsKey(complement))
