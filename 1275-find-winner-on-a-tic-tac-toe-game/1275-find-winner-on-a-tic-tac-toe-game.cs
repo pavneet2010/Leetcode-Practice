@@ -34,19 +34,15 @@ public class Solution {
         //Check all Rows
         for(int i=0;i<3;i++){
             int colsum=0;
+            int rowsum=0;
             for(int j=0;j<3;j++){
                 colsum+=arr[i,j];
+                rowsum+=arr[j,i];
                 if(colsum==3){
                     return "A";
                 }else if (colsum==-3){
                     return "B";
                 }
-            }
-        }
-          for(int i=0;i<3;i++){
-            int rowsum=0;
-            for(int j=0;j<3;j++){
-                rowsum+=arr[j,i];
                 if(rowsum==3){
                     return "A";
                 }else if (rowsum==-3){
@@ -54,6 +50,7 @@ public class Solution {
                 }
             }
         }
+         
         if(arr[0,0]+arr[1,1]+arr[2,2]==3){
             return "A";
         }else if(arr[0,0]+arr[1,1]+arr[2,2]==-3){
@@ -64,8 +61,7 @@ public class Solution {
         }else if(arr[2,0]+arr[1,1]+arr[0,2]==-3){
             return "B";
         }
-        return "";
-        
+        return "";   
         
         
     }
