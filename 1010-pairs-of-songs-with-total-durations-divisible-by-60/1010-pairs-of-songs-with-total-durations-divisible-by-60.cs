@@ -5,10 +5,10 @@ public class Solution {
         int res=0;
         foreach(int i in time){
            var mod = i % 60;
-        int key = mod != 0 ? 60 - mod : 0;
+        int complement = mod != 0 ? 60 - mod : 0;
 
-        if (dict.ContainsKey(key))
-            res += dict[key];
+        if (dict.ContainsKey(complement))
+            res += dict[complement];
 
         if(!dict.ContainsKey(mod))
         {
