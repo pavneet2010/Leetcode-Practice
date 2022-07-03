@@ -1,7 +1,7 @@
 public class Solution {
    public int FurthestBuilding(int[] heights, int bricks, int ladders)
     {
-        PriorityQueue<int, int> priorityQueue = new();
+        PriorityQueue<int, int> priorityQueue = new PriorityQueue<int, int>();
       
         for (int index = 0; index < heights.Length - 1; index++)
         {
