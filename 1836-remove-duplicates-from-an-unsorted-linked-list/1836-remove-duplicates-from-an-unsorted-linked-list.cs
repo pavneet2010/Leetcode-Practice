@@ -15,14 +15,6 @@ public class Solution {
             return head;
         }
         Dictionary<int,bool> dict=new Dictionary<int,bool>();
-//         for(ListNode iNode = head; iNode!=null; iNode = head.next) {
-//             if(!dict.ContainsKey(iNode.val)) {
-//                 dict.Add(iNode.val,false);
-//             }else{
-//                 dict[iNode.val]=true;
-//             }
-            
-//         }
         ListNode temp=head;
          while(temp!=null){
             if(!dict.ContainsKey(temp.val))
