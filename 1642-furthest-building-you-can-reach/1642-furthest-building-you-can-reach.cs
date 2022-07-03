@@ -2,7 +2,7 @@ public class Solution {
    public int FurthestBuilding(int[] heights, int bricks, int ladders)
     {
         PriorityQueue<int, int> priorityQueue = new();
-       int brUsed=0;
+      
         for (int index = 0; index < heights.Length - 1; index++)
         {
             int heightDifference = heights[index + 1] - heights[index];
