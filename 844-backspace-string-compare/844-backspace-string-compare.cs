@@ -14,7 +14,7 @@ public class Solution {
         foreach (char str in stack){
                  sCopy += str.ToString();                
             }
-        Console.WriteLine(sCopy);
+        
         stack.Clear();
         foreach(char c in t ){
             if(c!='#'){
@@ -29,8 +29,7 @@ public class Solution {
                 tCopy += str.ToString();
                 
             }
-         stack.Clear();
-        Console.WriteLine(sCopy+"-"+tCopy);
+         stack.Clear();        
         if(sCopy.Equals(tCopy)){
             return true;
         }else{
