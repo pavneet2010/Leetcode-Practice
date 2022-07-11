@@ -20,12 +20,12 @@ public class TimeMap {
         Dictionary<string, string> res = new Dictionary<string, string>();
         if(dict.ContainsKey(key)){
             string result=dict[key].LastOrDefault(k=>k.Item1<=timestamp).Item2;
-        if(result==null){
-            return "";
+        if(String.IsNullOrEmpty(result)){
+            return String.Empty;
         }
         return  result;
         }
-        return"";
+         return String.Empty;
         
     }
 }
