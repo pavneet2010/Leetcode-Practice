@@ -1,13 +1,12 @@
 public class TimeMap {
 
-    Dictionary<string, List<(int, string)>> dict = new Dictionary<string, List<(int, string)>>();
-    //Dictionary<string,List<int,string>>() dict=new ();
+    Dictionary<string, List<(int, string)>> dict;
     public TimeMap() {
-        
+        dict=new Dictionary<string, List<(int, string)>>();
     }
     
     public void Set(string key, string value, int timestamp) {
-        if (!dict.ContainsKey(key))        {
+        if (!dict.ContainsKey(key)){
             
             dict.Add(key, new List<(int, string)> { (timestamp, value) });
         }
