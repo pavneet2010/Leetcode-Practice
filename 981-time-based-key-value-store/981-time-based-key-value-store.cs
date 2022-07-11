@@ -6,8 +6,7 @@ public class TimeMap {
     }
     
     public void Set(string key, string value, int timestamp) {
-        if (!dict.ContainsKey(key)){
-            
+        if (!dict.ContainsKey(key)){            
             dict.Add(key, new List<(int, string)> { (timestamp, value) });
         }
         else
