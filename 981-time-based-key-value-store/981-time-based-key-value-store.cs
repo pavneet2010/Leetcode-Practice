@@ -1,8 +1,8 @@
 public class TimeMap {
 
-    Dictionary<string, List<(int, string)>> dict;
+    Dictionary<string, List<(int, string)>> dict=new Dictionary<string, List<(int, string)>>();
     public TimeMap() {
-        dict=new Dictionary<string, List<(int, string)>>();
+        //dict;
     }
     
     public void Set(string key, string value, int timestamp) {
@@ -25,7 +25,6 @@ public class TimeMap {
         }
         return  result;
         }
-         return String.Empty;
-        
+        return String.Empty;        
     }
 }
