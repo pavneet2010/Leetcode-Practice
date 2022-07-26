@@ -17,9 +17,7 @@ public class Solution {
             }else{
                 last=mid-1;
             }
-
             }
-            return first;
-        
+            return first;        
     }
 }
